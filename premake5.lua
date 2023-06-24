@@ -1,10 +1,10 @@
 project "ImGui"
 	kind "StaticLib"
 	language "C++"
-    staticruntime "On"
+    staticruntime "on"
 
-	targetdir ("%{wks.location}/bin/" .. bin_folder .. "/")
-	objdir ("%{wks.location}/bin/" .. bin_folder .. "/obj")
+	targetdir ("%{wks.location}/bin/" .. bin_folder .. "/bin/%{prj.name}")
+	objdir ("%{wks.location}/bin/" .. bin_folder .. "/obj/%{prj.name}")
 
 	files
 	{
